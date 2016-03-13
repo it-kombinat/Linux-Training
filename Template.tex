@@ -1,0 +1,93 @@
+\documentclass[slidestop,compress,mathserif,12pt,xcolor=dvipsnames]{beamer}
+\definecolor{LHCblue}{RGB}{75, 0, 130}
+\usecolortheme[named=LHCblue]{structure}
+%\usepackage[bars]{beamerthemetree} % Beamer theme v 2.2
+\usepackage{listings}
+\mode<presentation>
+\setbeamertemplate{footline}[frame number]
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\setbeamercovered{higly dynamic}
+\usetheme{Ilmenau} % Beamer theme v 3.0
+%\useoutertheme[subsection=true]{smoothbars}%Beamer Outer Theme-circles on top
+\useinnertheme{circles} %rectangle bullet points instead of circle ones
+\usepackage{beamerthemebars}
+\usepackage{listings}
+\usepackage{color}
+%
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+%
+\setbeamercolor{navigation symbols dimmed}{fg=red!80!white}
+\setbeamercolor{navigation symbols}{fg=red!80!black}
+\title{Template}
+\author[Martin\hspace{2.5cm}{@it-kombinat.net}]    {Martin}
+\institute{.net}
+%\center\includegraphics[height=5cm,width=5cm]{pics/it-kombinat.png}
+%\logo{%
+%    \includegraphics[width=3cm,height=3cm,keepaspectratio,right]{pics/it-kombinat.png}~%
+%}
+\usepackage{textpos}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{whoami}
+  \begin{itemize}
+  \item SysAdmin@.net
+  \item @.net
+  \item \url{http://.net}
+  \item \url{http://github.com/it-kombinat}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Code}
+ \begin{itemize}
+ \item Keine Ahnung
+ \end{itemize}
+\end{frame}
+ \note{
+   Here are things to remember:
+   \begin{enumerate}
+   \item Stress this first.
+   \item Then this.
+   \end{enumerate}
+   }
+\begin{frame}[fragile]
+\frametitle{intro}
+\begin{lstlisting}
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+    public void paintComponent(Graphics g) {
+        g.drawString("Hello, world!", 65, 95);
+    }    
+}
+\end{lstlisting}
+\end{frame}
+
+\end{document} 
